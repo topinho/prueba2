@@ -1,0 +1,286 @@
+
+.top {
+    background: rgb( 133, 212, 183);
+}
+
+.header-menu {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.header-menu li {
+    list-style-type: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2 rem;
+  }
+
+.header-menu a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: white;
+    
+}
+
+.header-menu a:hover {
+    background: lightblue;
+
+}
+
+.imagen-central{
+    width: 100%;
+    height: 400px;
+}
+
+.footer-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-bottom: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+
+.footer-telefono {
+    width: 25%;
+    align-items: flex-start;
+    text-align: center;
+}
+.footer-texto {
+    width: 50%;
+    text-align: center;
+}
+.footer-rrss {
+    align-self: center;
+    width: 25%;
+    text-align: center;
+}
+
+.social-btn {
+    align-items: center;
+    color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    background-color: #ffffff;
+    padding: 10px 5px;
+    width: 30px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 0px;
+    
+}
+
+.social-btn a {
+    color: #6DCCAA;
+    display: inline;
+}
+
+.btn {
+    color: black;
+    border: 2px solid black;
+    background-color: white;
+    padding: 8px 8px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 3rem;
+}
+
+.btn a {
+    color: black;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: rgb( 133, 212, 183);
+    color: white;
+}
+
+.contenido {
+    display: flex;
+    flex-direction: row;
+}
+
+.col-rescate {
+    width: 50%;
+}
+
+.col-crowfunding {
+    width: 50%;
+}
+
+.footer-desarrollo{
+    background-color: grey;
+    color: white;
+    padding: 20px;
+    text-align: start;
+}
+
+.row-galeria {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 10px;
+    background: rgb( 133, 212, 183);
+    margin-top: 8px;
+}
+
+.col1-galeria, .col2-galeria, .col3-galeria {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 5px;
+}
+
+.col1-galeria {
+    width: 35%;
+}
+
+.col2-galeria {
+    width: 25%;
+}
+
+.col3-galeria {
+    width: 38.9%;
+}
+
+/*
+@media all and (max-width: 850px) {
+    .header-menu {
+        flex-flow: column wrap;
+        padding: 0;
+    }
+
+    .header-menu a {
+        text-align: center;
+        padding: 10px;
+        border-top: 1px solid rgba(255, 255, 255, 0, 3);
+        border-bottom: 1px solid rgba(0, 0, 0, 0, 1);
+    }
+
+    .header-menu li:last-of-type a {
+        border-bottom: none;
+    }
+}
+*/
+@media (max-width: 400px) {
+    .header-menu {
+        flex-flow: column wrap;
+        padding: 0;
+    }
+
+    .header-menu a {
+        text-align: center;
+        padding: 10px;
+        border-top: 1px solid rgba(255, 255, 255, 0, 3);
+        border-bottom: 1px solid rgba(0, 0, 0, 0, 1);
+    }
+
+    .header-menu li:last-of-type a {
+        border-bottom: none;
+    }
+
+    .footer-row {
+        flex-flow: column wrap;
+    }
+    .footer-telefono {
+        width: 100%;
+    }
+    .footer-texto {
+        width: 100%;
+    }
+
+    .contenido {
+        flex-flow: column wrap;
+    }
+
+    .col-rescate {
+        width: 100%;
+        text-align: right;
+    }
+    .img-rescate {
+        width: 50%;
+    }
+    .img-crowfunding {
+        width: 100%;
+    }
+
+    .row-galeria {
+        display: flex;
+        padding: 10px;
+        margin-top: 8px;
+    }
+    .col1-galeria, .col2-galeria, .col3-galeria {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 5px;
+    }
+    
+    .img1-col1-galeria {
+        width: 103%;
+    }
+    .col1-galeria {
+        width: 35%;
+    }
+    
+    .col2-galeria {
+        width: 25%;
+    }
+    
+    .col3-galeria {
+        width: 38.9%;
+    }
+    img {
+        width: 100%;
+    }
+}
+
+/** Se que no esta en la evaluacion, pero es para mantener el orden en este rango de pixeles */
+
+@media (min-width: 401px) and (max-width: 800px)  {
+    .img-rescate {
+        width: 50%;
+    }
+    .img-crowfunding {
+        width: 60%;
+    }
+
+    .row-galeria {
+        display: flex;
+        padding: 10px;
+        margin-top: 8px;
+    }
+    .col1-galeria, .col2-galeria, .col3-galeria {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 5px;
+    }
+    
+    .img1-col1-galeria {
+        width: 103%;
+    }
+    .col1-galeria {
+        width: 35%;
+    }
+    
+    .col2-galeria {
+        width: 25%;
+    }
+    
+    .col3-galeria {
+        width: 38.9%;
+    }
+    img {
+        width: 100%;
+    }
+}
